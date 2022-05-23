@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.2 on win32)" generated="20220520 16:08:46.383" rpa="false" schemaversion="3">
+<suite id="s1" name="Click Image And Link" source="C:\Users\Rahul Natarajan\PycharmProjects\selenium_learnning\test\click_image_and_link.robot">
+<test id="s1-t1" name="Testcases_click_image_and_link" line="7">
+<kw name="Tc_click_image">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${click_image_home}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220520 16:08:46.782" level="INFO">Opening browser 'Chrome' to base url 'https://stackoverflow.com/questions/21350605/python-selenium-click-on-button'.</msg>
+<status status="PASS" starttime="20220520 16:08:46.782" endtime="20220520 16:08:51.279"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220520 16:08:51.279" endtime="20220520 16:08:51.432"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_accept_cookies}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220520 16:08:51.432" endtime="20220520 16:08:51.471"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_accept_cookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220520 16:08:51.471" level="INFO">Clicking element 'xpath=//button[normalize-space()='Accept all cookies']'.</msg>
+<status status="PASS" starttime="20220520 16:08:51.471" endtime="20220520 16:08:51.523"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${locator_image}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20220520 16:08:51.523" level="INFO">Clicking image 'xpath=//span[@class='-img _glyph']'.</msg>
+<msg timestamp="20220520 16:08:51.861" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220520 16:08:51.862" level="FAIL">Input with locator 'xpath=//span[@class='-img _glyph']' not found.</msg>
+<status status="FAIL" starttime="20220520 16:08:51.523" endtime="20220520 16:08:51.866"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220520 16:08:51.866" endtime="20220520 16:08:51.866"/>
+</kw>
+<status status="FAIL" starttime="20220520 16:08:46.782" endtime="20220520 16:08:51.867"/>
+</kw>
+<status status="FAIL" starttime="20220520 16:08:46.781" endtime="20220520 16:08:51.867">Input with locator 'xpath=//span[@class='-img _glyph']' not found.</status>
+</test>
+<status status="FAIL" starttime="20220520 16:08:46.388" endtime="20220520 16:08:51.870"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Click Image And Link">Click Image And Link</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
